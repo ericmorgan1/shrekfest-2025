@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Shrek-themed logo -->
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="100" cy="100" r="90" fill="#5c8a16" stroke="#2c4a03" stroke-width="4" />
+  
+  <!-- Ears -->
+  <ellipse cx="40" cy="70" rx="25" ry="35" fill="#6b9925" stroke="#2c4a03" stroke-width="3" transform="rotate(-15, 40, 70)" />
+  <ellipse cx="160" cy="70" rx="25" ry="35" fill="#6b9925" stroke="#2c4a03" stroke-width="3" transform="rotate(15, 160, 70)" />
+  
+  <!-- Face -->
+  <circle cx="100" cy="100" r="70" fill="#6b9925" stroke="#2c4a03" stroke-width="3" />
+  
+  <!-- Eyes -->
+  <ellipse cx="75" cy="85" rx="15" ry="18" fill="#f5faed" stroke="#2c4a03" stroke-width="2" />
+  <ellipse cx="125" cy="85" rx="15" ry="18" fill="#f5faed" stroke="#2c4a03" stroke-width="2" />
+  
+  <!-- Pupils -->
+  <circle cx="75" cy="85" r="7" fill="#2c4a03" />
+  <circle cx="125" cy="85" r="7" fill="#2c4a03" />
+  
+  <!-- Eyebrows -->
+  <path d="M60,75 Q75,65 90,75" fill="none" stroke="#2c4a03" stroke-width="3" stroke-linecap="round" />
+  <path d="M110,75 Q125,65 140,75" fill="none" stroke="#2c4a03" stroke-width="3" stroke-linecap="round" />
+  
+  <!-- Nose -->
+  <ellipse cx="100" cy="105" rx="12" ry="8" fill="#578020" stroke="#2c4a03" stroke-width="2" />
+  
+  <!-- Mouth -->
+  <path d="M70,125 Q100,145 130,125" fill="none" stroke="#2c4a03" stroke-width="3" stroke-linecap="round" />
+  
+  <!-- Text -->
+  <text x="100" y="182" font-family="'Comic Sans MS', cursive" font-size="22" font-weight="bold" text-anchor="middle" fill="#f5faed" filter="url(#shadow)">SHREKFEST</text>
+</svg>

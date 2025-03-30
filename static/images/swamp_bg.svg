@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- Swamp background pattern -->
+  <defs>
+    <pattern id="swampPattern" patternUnits="userSpaceOnUse" width="200" height="200">
+      <!-- Background -->
+      <rect width="200" height="200" fill="#2c4a03" />
+      
+      <!-- Mud bubbles -->
+      <circle cx="20" cy="30" r="5" fill="#3a5f0b" opacity="0.7" />
+      <circle cx="60" cy="70" r="8" fill="#3a5f0b" opacity="0.6" />
+      <circle cx="120" cy="40" r="6" fill="#3a5f0b" opacity="0.8" />
+      <circle cx="150" cy="90" r="10" fill="#3a5f0b" opacity="0.5" />
+      <circle cx="180" cy="160" r="7" fill="#3a5f0b" opacity="0.7" />
+      <circle cx="40" cy="130" r="9" fill="#3a5f0b" opacity="0.6" />
+      <circle cx="100" cy="180" r="6" fill="#3a5f0b" opacity="0.8" />
+      
+      <!-- Grass tufts -->
+      <path d="M10,200 C15,180 5,185 10,170 C15,185 25,180 30,200" fill="#4e7210" opacity="0.7" />
+      <path d="M50,200 C55,180 45,185 50,170 C55,185 65,180 70,200" fill="#4e7210" opacity="0.8" />
+      <path d="M120,200 C125,180 115,185 120,170 C125,185 135,180 140,200" fill="#4e7210" opacity="0.7" />
+      <path d="M170,200 C175,180 165,185 170,170 C175,185 185,180 190,200" fill="#4e7210" opacity="0.8" />
+      
+      <!-- Water ripples -->
+      <ellipse cx="30" cy="100" rx="20" ry="5" fill="#3a5f0b" opacity="0.2" />
+      <ellipse cx="100" cy="60" rx="25" ry="6" fill="#3a5f0b" opacity="0.1" />
+      <ellipse cx="160" cy="130" rx="30" ry="7" fill="#3a5f0b" opacity="0.2" />
+      <ellipse cx="70" cy="170" rx="15" ry="4" fill="#3a5f0b" opacity="0.1" />
+    </pattern>
+  </defs>
+  
+  <!-- Applying the pattern -->
+  <rect width="200" height="200" fill="url(#swampPattern)" />
+</svg>
