@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,17 @@
     <!-- Retro web fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="page-container">
         <!-- Background noise effect overlay -->
         <div class="noise-overlay"></div>
-        
+
         <!-- TOP NAVIGATION BAR -->
         <div class="top-nav">
             <marquee scrollamount="5" direction="left" behavior="scroll" class="moving-text">
-                ★★★ WELCOME TO SHREKFEST 2025 ★★★ THE SWAMPIEST EVENT OF THE YEAR ★★★ HAPPENING JULY 28-30, 2025 ★★★
+                ★★★ WELCOME TO SHREKFEST 2025 ★★★ THE SWAMPIEST EVENT OF THE YEAR ★★★ HAPPENING JULY 28-30, 2025
+                ★★★
             </marquee>
         </div>
 
@@ -26,13 +29,14 @@
             <div class="header-container">
                 <div class="logo-container">
                     <div class="logo">
-                        <img src="{{ url_for('static', filename='images/shrek_logo.svg') }}" alt="Shrekfest Logo">
+                        <img src="{{ url_for('static', filename='images/shrek_donkey_cat.gif') }}"
+                            alt="Shrek, Donkey, and Cat" class="header-gif">
                     </div>
                     <h1 class="blink">SHREKFEST 2025</h1>
                     <h2>It's All Ogre Now!</h2>
                 </div>
             </div>
-            
+
             <nav class="main-nav">
                 <table class="nav-table" border="1" cellpadding="5" cellspacing="0">
                     <tr>
@@ -61,13 +65,17 @@
                 <div class="divider">
                     <img src="{{ url_for('static', filename='images/divider.svg') }}" alt="Divider">
                 </div>
-                
+
                 <div class="content-box">
                     <table border="0" cellpadding="10" cellspacing="0" width="100%">
                         <tr>
                             <td width="70%" class="about-text">
-                                <p><span class="first-letter">W</span>ELCOME to the world's premier celebration of love, life and Shrek! Join us for one day of ogre-sized fun in the swamp! Shrekfest began as a small gathering of fans and has grown into an international phenomenon.</p>
-                                <p>Featuring costume contests, onion eating competitions, a screening of the movie under the stars, and so much more!</p>
+                                <p><span class="first-letter">W</span>ELCOME to the world's premier celebration of love,
+                                    life and Shrek! Join us for one day of ogre-sized fun in the swamp! Shrekfest began
+                                    as a small gathering of fans and has grown into a huge phenomenon.
+                                </p>
+                                <p>Featuring costume contests, onion eating competitions, a screening of the movie, and
+                                    so much more!</p>
                                 <p class="blink">GET READY TO GET SHREKT!</p>
                             </td>
                             <td width="30%" class="event-details">
@@ -93,55 +101,59 @@
                 <div class="divider">
                     <img src="{{ url_for('static', filename='images/divider.svg') }}" alt="Divider">
                 </div>
-                
+
                 <div class="content-box">
                     <div class="schedule-tabs">
                         <button class="tab-btn active" onclick="showSchedule('day1')">SCHEDULE</button>
                     </div>
-                    
+
                     <div id="day1" class="schedule-content active">
                         <h3>FRIDAY, JULY 28</h3>
                         <table class="schedule-table" border="1" cellpadding="5" cellspacing="0">
-                            <tr class="table-header">
-                                <th>TIME</th>
-                                <th>EVENT</th>
-                                <th>LOCATION</th>
-                            </tr>
-                            <tr>
-                                <td>10:00 AM</td>
-                                <td>Gates Open / Registration</td>
-                                <td>Main Entrance</td>
-                            </tr>
-                            <tr>
-                                <td>11:30 AM</td>
-                                <td>Opening Ceremony</td>
-                                <td>Main Stage</td>
-                            </tr>
-                            <tr>
-                                <td>1:00 PM</td>
-                                <td>Ogre Costume Competition</td>
-                                <td>Main Stage</td>
-                            </tr>
-                            <tr>
-                                <td>3:00 PM</td>
-                                <td>Swamp Mud Wrestling</td>
-                                <td>Mud Pit</td>
-                            </tr>
-                            <tr>
-                                <td>5:00 PM</td>
-                                <td>Onion Eating Contest</td>
-                                <td>Food Court</td>
-                            </tr>
-                            <tr>
-                                <td>7:00 PM</td>
-                                <td>Live Music: "Smash Mouth Tribute Band"</td>
-                                <td>Main Stage</td>
-                            </tr>
-                            <tr>
-                                <td>9:00 PM</td>
-                                <td>Screening of Shrek (2001)</td>
-                                <td>Outdoor Theater</td>
-                            </tr>
+                            <thead>
+                                <tr class="table-header">
+                                    <th>TIME</th>
+                                    <th>EVENT</th>
+                                    <th>LOCATION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-title="TIME">10:00 AM</td>
+                                    <td data-title="EVENT">Gates Open / Registration</td>
+                                    <td data-title="LOCATION">Main Entrance</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="TIME">11:30 AM</td>
+                                    <td data-title="EVENT">Opening Ceremony</td>
+                                    <td data-title="LOCATION">Main Stage</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="TIME">1:00 PM</td>
+                                    <td data-title="EVENT">Ogre Costume Competition</td>
+                                    <td data-title="LOCATION">Main Stage</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="TIME">3:00 PM</td>
+                                    <td data-title="EVENT">Swamp Mud Wrestling</td>
+                                    <td data-title="LOCATION">Mud Pit</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="TIME">5:00 PM</td>
+                                    <td data-title="EVENT">Onion Eating Contest</td>
+                                    <td data-title="LOCATION">Food Court</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="TIME">7:00 PM</td>
+                                    <td data-title="EVENT">Live Music: "Smash Mouth Tribute Band"</td>
+                                    <td data-title="LOCATION">Main Stage</td>
+                                </tr>
+                                <tr>
+                                    <td data-title="TIME">9:00 PM</td>
+                                    <td data-title="EVENT">Screening of Shrek (2001)</td>
+                                    <td data-title="LOCATION">Outdoor Theater</td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </div>
@@ -153,7 +165,7 @@
                 <div class="divider">
                     <img src="{{ url_for('static', filename='images/divider.svg') }}" alt="Divider">
                 </div>
-                
+
                 <div class="content-box">
                     <div class="location-container">
                         <div class="location-text">
@@ -161,10 +173,10 @@
                             <p>Shrekfest 2025 will be held at:</p>
                             <div class="address-box">
                                 <p><strong>Swamp Park</strong><br>
-                                123 Ogre Lane<br>
-                                Far Far Away, FF 12345</p>
+                                    123 Ogre Lane<br>
+                                    Far Far Away, FF 12345</p>
                             </div>
-                            
+
                             <h4>DIRECTIONS:</h4>
                             <ul>
                                 <li>Take the main highway to Far Far Away</li>
@@ -173,20 +185,22 @@
                                 <li>Follow the smell of swamp for 2 miles</li>
                                 <li>If you reach the castle, you've gone too far</li>
                             </ul>
-                            
+
                             <div class="transport-options">
                                 <h4>TRANSPORT OPTIONS:</h4>
                                 <p><strong>PARKING:</strong> $5 per vehicle</p>
-                                <p><strong>SHUTTLE:</strong> Free shuttle from Far Far Away Castle Plaza every 30 minutes</p>
+                                <p><strong>SHUTTLE:</strong> Free shuttle from Far Far Away Castle Plaza every 30
+                                    minutes</p>
                                 <p><strong>DRAGON RIDES:</strong> Available but expensive and somewhat dangerous</p>
                             </div>
                         </div>
-                        
+
                         <div class="map-container">
                             <div class="map-placeholder">
                                 <h3>INTERACTIVE MAP</h3>
                                 <p class="blink">COMING SOON!</p>
-                                <img src="{{ url_for('static', filename='images/construction.svg') }}" alt="Under Construction">
+                                <img src="{{ url_for('static', filename='images/construction.svg') }}"
+                                    alt="Under Construction">
                             </div>
                         </div>
                     </div>
@@ -199,11 +213,11 @@
                 <div class="divider">
                     <img src="{{ url_for('static', filename='images/divider.svg') }}" alt="Divider">
                 </div>
-                
+
                 <div class="content-box">
                     <div class="gallery-container">
                         <h3>PHOTO GALLERY FROM PREVIOUS YEARS</h3>
-                        
+
                         <div class="gallery-grid">
                             <!-- These would normally be actual images, but we're using placeholder SVGs -->
                             <div class="gallery-item">
@@ -249,13 +263,14 @@
                                 <p>Mud Wrestling</p>
                             </div>
                         </div>
-                        
+
                         <div class="photo-upload">
                             <h4 class="blink">SHARE YOUR MEMORIES!</h4>
                             <p>Upload your favorite photos from previous Shrekfests!</p>
                             <div class="upload-form">
                                 <button class="upload-btn" disabled>UPLOAD PHOTO (COMING SOON!)</button>
-                                <img src="{{ url_for('static', filename='images/construction.svg') }}" alt="Under Construction" class="small-construction">
+                                <img src="{{ url_for('static', filename='images/construction.svg') }}"
+                                    alt="Under Construction" class="small-construction">
                             </div>
                         </div>
                     </div>
@@ -268,7 +283,7 @@
                 <div class="divider">
                     <img src="{{ url_for('static', filename='images/divider.svg') }}" alt="Divider">
                 </div>
-                
+
                 <div class="content-box">
                     <div class="contact-container">
                         <div class="contact-form">
@@ -307,14 +322,14 @@
                                 </table>
                             </form>
                         </div>
-                        
+
                         <div class="contact-info">
                             <h3>REACH OUT TO US</h3>
                             <div class="info-box">
                                 <p><strong>EMAIL:</strong> info@shrekfest2025.com</p>
                                 <p><strong>PHONE:</strong> 1-800-GET-SHREK</p>
                                 <p><strong>FESTIVAL HOURS:</strong><br>July 28, 2025<br>10:00 AM - 11:00 PM</p>
-                                
+
                                 <div class="social-links">
                                     <h4>FOLLOW US:</h4>
                                     <ul>
@@ -323,11 +338,12 @@
                                         <li><a href="#" target="_blank">[ANGELFIRE]</a></li>
                                     </ul>
                                 </div>
-                                
+
                                 <div class="guestbook">
                                     <h4>SIGN OUR GUESTBOOK!</h4>
                                     <a href="#" class="guestbook-link">CLICK HERE</a>
-                                    <img src="{{ url_for('static', filename='images/construction.svg') }}" alt="Under Construction" class="small-construction">
+                                    <img src="{{ url_for('static', filename='images/construction.svg') }}"
+                                        alt="Under Construction" class="small-construction">
                                 </div>
                             </div>
                         </div>
@@ -348,21 +364,21 @@
                     <span class="digit">0</span>
                 </div>
             </div>
-            
+
             <div class="footer-links">
-                <a href="#">HOME</a> | 
-                <a href="#about">ABOUT</a> | 
-                <a href="#schedule">SCHEDULE</a> | 
-                <a href="#location">LOCATION</a> | 
-                <a href="#gallery">GALLERY</a> | 
+                <a href="#">HOME</a> |
+                <a href="#about">ABOUT</a> |
+                <a href="#schedule">SCHEDULE</a> |
+                <a href="#location">LOCATION</a> |
+                <a href="#gallery">GALLERY</a> |
                 <a href="#contact">CONTACT</a>
             </div>
-            
+
             <div class="copyright">
                 <p>© 2025 SHREKFEST | ALL RIGHTS RESERVED</p>
                 <p class="best-viewed">THIS SITE BEST VIEWED WITH NETSCAPE NAVIGATOR 4.0 AT 800x600</p>
             </div>
-            
+
             <div class="webring">
                 <a href="#" class="webring-link">[ JOIN OUR WEBRING ]</a>
             </div>
@@ -371,4 +387,5 @@
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
+
 </html>

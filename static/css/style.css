@@ -675,6 +675,8 @@ footer {
     .page-container {
         padding: 5px;
         border-width: 5px;
+        max-width: 100%;
+        overflow-x: hidden;
     }
     
     h1 {
@@ -683,6 +685,19 @@ footer {
     
     h2 {
         font-size: 20px;
+    }
+    
+    .section-title {
+        font-size: 18px;
+        padding: 10px 5px;
+    }
+    
+    .content-section {
+        margin-bottom: 30px;
+    }
+    
+    .content-box {
+        padding: 15px 10px;
     }
     
     .about-text, .event-details,
@@ -697,11 +712,127 @@ footer {
         font-size: 16px;
         padding: 5px 8px;
     }
+    
+    .schedule-table th, .schedule-table td {
+        padding: 6px 5px;
+        font-size: 16px;
+    }
+    
+    .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px 10px;
+    }
 }
 
 @media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+    
+    .main-container {
+        padding: 5px;
+    }
+    
+    .page-container {
+        padding: 5px;
+        border-width: 3px;
+    }
+    
+    h1 {
+        font-size: 18px;
+        padding: 0 5px;
+    }
+    
+    .section-title {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 8px 5px;
+    }
+    
+    .divider img {
+        width: 95%;
+        height: 15px;
+    }
+    
+    .content-box {
+        padding: 10px 8px;
+        border-width: 4px;
+    }
+    
+    .first-letter {
+        font-size: 28px;
+    }
+    
+    .about-text p {
+        font-size: 16px;
+    }
+    
+    .event-box {
+        padding: 10px;
+    }
+    
+    .event-box h3 {
+        font-size: 18px;
+    }
+    
+    .event-box li {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+    
+    .schedule-content h3 {
+        font-size: 18px;
+    }
+    
+    .schedule-table {
+        font-size: 14px;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    .schedule-table th, .schedule-table td {
+        padding: 5px 3px;
+    }
+    
+    /* Mobile-friendly responsive table */
+    .schedule-table, .schedule-table thead, .schedule-table tbody, 
+    .schedule-table th, .schedule-table td, .schedule-table tr {
+        display: block;
+    }
+    
+    .schedule-table thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    
+    .schedule-table tr {
+        border: 2px ridge #5c8a16;
+        margin-bottom: 10px;
+    }
+    
+    .schedule-table td {
+        border: none;
+        position: relative;
+        padding-left: 40%;
+        min-height: 24px;
+    }
+    
+    .schedule-table td:before {
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 35%;
+        padding-right: 10px;
+        font-weight: bold;
+        content: attr(data-title);
+    }
+    
     .gallery-grid {
         grid-template-columns: 1fr;
+        gap: 15px;
     }
     
     .moving-text {
@@ -709,12 +840,42 @@ footer {
     }
     
     .logo {
-        width: 150px;
-        height: 150px;
+        width: 120px;
+        height: 120px;
+    }
+    
+    .nav-table {
+        margin: 10px 0;
     }
     
     .nav-table td {
         display: block;
         width: 100%;
+        border-bottom: 1px solid #86b520;
+    }
+    
+    .nav-table td:last-child {
+        border-bottom: none;
+    }
+    
+    .form-table input, .form-table select, .form-table textarea {
+        padding: 5px;
+        font-size: 15px;
+    }
+    
+    .submit-btn {
+        padding: 6px 15px;
+        font-size: 16px;
+    }
+    
+    .counter .digit {
+        width: 25px;
+        height: 35px;
+        font-size: 16px;
+        line-height: 35px;
+    }
+    
+    .best-viewed {
+        font-size: 10px;
     }
 }
