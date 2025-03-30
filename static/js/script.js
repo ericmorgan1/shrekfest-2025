@@ -10,9 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize star cursor trail effect
     initializeStarCursor();
     
-    // Set up schedule tab functionality
-    setupScheduleTabs();
-    
     // Handle form submission
     setupContactForm();
     
@@ -56,54 +53,12 @@ function initializeStarCursor() {
 }
 
 /**
- * Sets up the schedule tab functionality
- */
-function setupScheduleTabs() {
-    const tabButtons = document.querySelectorAll('.tab-btn');
-    
-    tabButtons.forEach(function(button) {
-        button.addEventListener('click', function() {
-            // Get the tab ID from the button's onclick attribute
-            const tabId = this.getAttribute('onclick').match(/'([^']+)'/)[1];
-            
-            // Remove active class from all tabs and buttons
-            document.querySelectorAll('.schedule-content').forEach(function(tab) {
-                tab.classList.remove('active');
-            });
-            
-            tabButtons.forEach(function(btn) {
-                btn.classList.remove('active');
-            });
-            
-            // Add active class to the selected tab and button
-            document.getElementById(tabId).classList.add('active');
-            this.classList.add('active');
-        });
-    });
-}
-
-/**
- * Shows tab content (called from HTML)
+ * This function is kept for backward compatibility but no longer needed
+ * since we have only one day tab now
  */
 function showSchedule(tabId) {
-    // Remove active class from all tabs and buttons
-    document.querySelectorAll('.schedule-content').forEach(function(tab) {
-        tab.classList.remove('active');
-    });
-    
-    document.querySelectorAll('.tab-btn').forEach(function(btn) {
-        btn.classList.remove('active');
-    });
-    
-    // Add active class to the selected tab and button
-    document.getElementById(tabId).classList.add('active');
-    
-    // Find the button that corresponds to this tab
-    document.querySelectorAll('.tab-btn').forEach(function(btn) {
-        if (btn.getAttribute('onclick').includes(tabId)) {
-            btn.classList.add('active');
-        }
-    });
+    // Function kept for compatibility, but no functionality needed
+    console.log("Schedule tab selected:", tabId);
 }
 
 /**
@@ -170,7 +125,7 @@ function showWelcomeMessage() {
     title.style.textShadow = '1px 1px 0 #2c4a03';
     
     const content = document.createElement('p');
-    content.textContent = 'Get ready for the swampiest three days of your life! Check out our schedule, location info, and more!';
+    content.textContent = 'Get ready for the swampiest day of your life! Check out our schedule, location info, and more!';
     content.style.color = '#f5faed';
     content.style.marginBottom = '20px';
     
