@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <!-- Dancing Ogre Animation -->
+  <style>
+    .dancing-ogre {
+      animation: dance 1.5s infinite alternate;
+    }
+    @keyframes dance {
+      0% { transform: translate(0, 0) rotate(-5deg); }
+      25% { transform: translate(-5px, -2px) rotate(0deg); }
+      50% { transform: translate(0, 5px) rotate(5deg); }
+      75% { transform: translate(5px, -2px) rotate(0deg); }
+      100% { transform: translate(0, 0) rotate(-5deg); }
+    }
+    .arm {
+      animation: wave 1s infinite alternate;
+    }
+    @keyframes wave {
+      0% { transform: rotate(-10deg); }
+      100% { transform: rotate(10deg); }
+    }
+    .jumping {
+      animation: jump 0.8s infinite alternate;
+    }
+    @keyframes jump {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-10px); }
+    }
+  </style>
+  
+  <!-- Background -->
+  <circle cx="60" cy="60" r="55" fill="#6b9925" stroke="#2c4a03" stroke-width="3" />
+  
+  <!-- Dancing Ogre -->
+  <g class="dancing-ogre">
+    <!-- Body -->
+    <ellipse cx="60" cy="75" rx="25" ry="35" fill="#5c8a16" stroke="#2c4a03" stroke-width="2" />
+    
+    <!-- Head -->
+    <circle cx="60" cy="40" r="20" fill="#6b9925" stroke="#2c4a03" stroke-width="2" />
+    
+    <!-- Eyes -->
+    <circle cx="53" cy="35" r="5" fill="#f5faed" stroke="#2c4a03" stroke-width="1" />
+    <circle cx="67" cy="35" r="5" fill="#f5faed" stroke="#2c4a03" stroke-width="1" />
+    <circle cx="53" cy="35" r="2" fill="#2c4a03" />
+    <circle cx="67" cy="35" r="2" fill="#2c4a03" />
+    
+    <!-- Smile -->
+    <path d="M50,45 Q60,55 70,45" fill="none" stroke="#2c4a03" stroke-width="2" stroke-linecap="round" />
+    
+    <!-- Ears -->
+    <ellipse cx="42" cy="30" rx="5" ry="8" fill="#6b9925" stroke="#2c4a03" stroke-width="1" transform="rotate(-15, 42, 30)" />
+    <ellipse cx="78" cy="30" rx="5" ry="8" fill="#6b9925" stroke="#2c4a03" stroke-width="1" transform="rotate(15, 78, 30)" />
+    
+    <!-- Arms -->
+    <path d="M40,65 Q30,75 25,90" fill="none" stroke="#5c8a16" stroke-width="8" stroke-linecap="round" class="arm" />
+    <path d="M80,65 Q90,75 95,90" fill="none" stroke="#5c8a16" stroke-width="8" stroke-linecap="round" class="arm" transform="scale(-1, 1) translate(-120, 0)" />
+    
+    <!-- Legs -->
+    <path d="M50,105 L45,120" fill="none" stroke="#5c8a16" stroke-width="10" stroke-linecap="round" class="jumping" />
+    <path d="M70,105 L75,120" fill="none" stroke="#5c8a16" stroke-width="10" stroke-linecap="round" class="jumping" />
+  </g>
+  
+  <!-- Text -->
+  <text x="60" y="15" font-family="'Comic Sans MS', cursive" font-size="10" font-weight="bold" text-anchor="middle" fill="#f5faed">GET SHREKTACULAR!</text>
+</svg>

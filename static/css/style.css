@@ -603,6 +603,12 @@ footer {
     display: inline-flex;
 }
 
+.visitor-counter-animation {
+    display: block;
+    margin: 0 auto;
+    max-width: 180px;
+}
+
 .digit {
     display: inline-block;
     width: 30px;
@@ -654,6 +660,46 @@ footer {
     color: #f5faed;
     text-decoration: none;
     font-weight: bold;
+}
+
+/* ANIMATED SVG STYLES */
+.flaming-text-container {
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+}
+
+.flaming-text {
+    max-width: 350px;
+    height: auto;
+}
+
+.dancing-ogre-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+}
+
+.dancing-ogre-gif {
+    max-width: 100px;
+    height: auto;
+}
+
+.fairy-animation {
+    max-width: 40px;
+    height: auto;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.rotating-onion {
+    display: flex;
+    justify-content: center;
+    margin: 15px auto;
+}
+
+.rotating-onion img {
+    max-width: 80px;
 }
 
 /* UTILITY CLASSES */

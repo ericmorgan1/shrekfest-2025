@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="60" viewBox="0 0 180 60">
+  <!-- Visitor Counter Animation -->
+  <style>
+    .counter-digit {
+      animation: flip 0.5s;
+    }
+    @keyframes flip {
+      0% { transform: rotateX(90deg); opacity: 0; }
+      100% { transform: rotateX(0deg); opacity: 1; }
+    }
+    .counter-bg {
+      animation: pulse 2s infinite alternate;
+    }
+    @keyframes pulse {
+      0% { fill: #4e7210; }
+      100% { fill: #5c8a16; }
+    }
+    .counter-label {
+      animation: rainbow 6s infinite;
+    }
+    @keyframes rainbow {
+      0% { fill: #ff0000; }
+      16% { fill: #ff8000; }
+      33% { fill: #ffff00; }
+      50% { fill: #00ff00; }
+      66% { fill: #00ffff; }
+      83% { fill: #0080ff; }
+      100% { fill: #ff0000; }
+    }
+  </style>
+  
+  <!-- Background -->
+  <rect x="5" y="5" width="170" height="50" rx="5" ry="5" fill="#3a5f0b" stroke="#2c4a03" stroke-width="2" />
+  
+  <!-- Counter Label -->
+  <text x="90" y="20" font-family="'Comic Sans MS', cursive" font-size="10" font-weight="bold" text-anchor="middle" fill="#f5faed" class="counter-label">YOU ARE VISITOR #</text>
+  
+  <!-- Counter Digits -->
+  <g transform="translate(30, 30)">
+    <!-- Digit 1 -->
+    <rect x="0" y="0" width="20" height="25" rx="2" ry="2" class="counter-bg" />
+    <text x="10" y="20" font-family="'Courier New', monospace" font-size="20" font-weight="bold" text-anchor="middle" fill="#f5faed" class="counter-digit">9</text>
+    
+    <!-- Digit 2 -->
+    <rect x="25" y="0" width="20" height="25" rx="2" ry="2" class="counter-bg" />
+    <text x="35" y="20" font-family="'Courier New', monospace" font-size="20" font-weight="bold" text-anchor="middle" fill="#f5faed" class="counter-digit">9</text>
+    
+    <!-- Digit 3 -->
+    <rect x="50" y="0" width="20" height="25" rx="2" ry="2" class="counter-bg" />
+    <text x="60" y="20" font-family="'Courier New', monospace" font-size="20" font-weight="bold" text-anchor="middle" fill="#f5faed" class="counter-digit">9</text>
+    
+    <!-- Digit 4 -->
+    <rect x="75" y="0" width="20" height="25" rx="2" ry="2" class="counter-bg" />
+    <text x="85" y="20" font-family="'Courier New', monospace" font-size="20" font-weight="bold" text-anchor="middle" fill="#f5faed" class="counter-digit">9</text>
+    
+    <!-- Digit 5 -->
+    <rect x="100" y="0" width="20" height="25" rx="2" ry="2" class="counter-bg" />
+    <text x="110" y="20" font-family="'Courier New', monospace" font-size="20" font-weight="bold" text-anchor="middle" fill="#f5faed" class="counter-digit">9</text>
+  </g>
+</svg>

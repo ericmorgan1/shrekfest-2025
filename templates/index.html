@@ -28,8 +28,13 @@
                     <div class="logo">
                         <img src="{{ url_for('static', filename='images/shrek_logo.svg') }}" alt="Shrekfest Logo">
                     </div>
-                    <h1 class="blink">SHREKFEST 2023</h1>
+                    <div class="flaming-text-container">
+                        <img src="{{ url_for('static', filename='images/flaming_text.svg') }}" alt="Shrekfest 2023" class="flaming-text">
+                    </div>
                     <h2>It's All Ogre Now!</h2>
+                    <div class="dancing-ogre-container">
+                        <img src="{{ url_for('static', filename='images/dancing_ogre.svg') }}" alt="Dancing Ogre" class="dancing-ogre-gif">
+                    </div>
                 </div>
             </div>
             
@@ -167,7 +172,10 @@
                             </tr>
                             <tr>
                                 <td>1:00 PM</td>
-                                <td>Fairy Tale Creatures Parade</td>
+                                <td>
+                                    Fairy Tale Creatures Parade
+                                    <img src="{{ url_for('static', filename='images/flying_fairy.svg') }}" alt="Flying Fairy" class="fairy-animation">
+                                </td>
                                 <td>Festival Grounds</td>
                             </tr>
                             <tr>
@@ -273,6 +281,9 @@
                                 <p><strong>PARKING:</strong> $5 per vehicle per day</p>
                                 <p><strong>SHUTTLE:</strong> Free shuttle from Far Far Away Castle Plaza every 30 minutes</p>
                                 <p><strong>DRAGON RIDES:</strong> Available but expensive and somewhat dangerous</p>
+                                <div class="rotating-onion">
+                                    <img src="{{ url_for('static', filename='images/rotating_onion.svg') }}" alt="Rotating Onion">
+                                </div>
                             </div>
                         </div>
                         
@@ -435,11 +446,7 @@
             <div class="visitor-counter">
                 <h4>VISITOR COUNT:</h4>
                 <div class="counter">
-                    <span class="digit">0</span>
-                    <span class="digit">0</span>
-                    <span class="digit">4</span>
-                    <span class="digit">2</span>
-                    <span class="digit">0</span>
+                    <img src="{{ url_for('static', filename='images/visitor_counter_animation.svg') }}" alt="Visitor Counter" class="visitor-counter-animation">
                 </div>
             </div>
             

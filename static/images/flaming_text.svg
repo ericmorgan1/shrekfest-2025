@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="80" viewBox="0 0 300 80">
+  <!-- Flaming Text Animation - Classic 90s Style -->
+  <style>
+    .flame {
+      animation: flicker 0.5s infinite alternate;
+    }
+    @keyframes flicker {
+      0% { opacity: 0.8; }
+      25% { opacity: 1; }
+      50% { opacity: 0.8; }
+      75% { opacity: 0.9; }
+      100% { opacity: 1; }
+    }
+    .text-shadow {
+      animation: glow 1s infinite alternate;
+    }
+    @keyframes glow {
+      0% { filter: drop-shadow(0 0 2px #ff4500); }
+      100% { filter: drop-shadow(0 0 8px #ff4500); }
+    }
+  </style>
+  
+  <!-- Flames Behind Text -->
+  <g class="flame">
+    <path d="M30,50 Q40,20 50,50 Q60,30 70,50 Q80,10 90,50 Q100,30 110,50 Q120,20 130,50 Q140,30 150,50 Q160,10 170,50 Q180,30 190,50 Q200,20 210,50 Q220,30 230,50 Q240,10 250,50 Q260,30 270,50" 
+          fill="#ff4500" stroke="none" />
+    <path d="M30,50 Q40,30 50,50 Q60,40 70,50 Q80,20 90,50 Q100,40 110,50 Q120,30 130,50 Q140,40 150,50 Q160,20 170,50 Q180,40 190,50 Q200,30 210,50 Q220,40 230,50 Q240,20 250,50 Q260,40 270,50" 
+          fill="#ff8c00" stroke="none" />
+    <path d="M30,50 Q40,40 50,50 Q60,45 70,50 Q80,35 90,50 Q100,45 110,50 Q120,40 130,50 Q140,45 150,50 Q160,35 170,50 Q180,45 190,50 Q200,40 210,50 Q220,45 230,50 Q240,35 250,50 Q260,45 270,50" 
+          fill="#ffff00" stroke="none" />
+  </g>
+  
+  <!-- Text -->
+  <text x="150" y="50" font-family="'Comic Sans MS', cursive" font-size="30" font-weight="bold" text-anchor="middle" fill="#f5faed" class="text-shadow">SHREKFEST 2023</text>
+</svg>
