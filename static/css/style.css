@@ -12,17 +12,17 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #3a5f0b;
-    border: 2px solid #5c8a16;
+    background: #4a3c82;
+    border: 2px solid #624dac;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #86b520;
-    border: 2px outset #a1cc39;
+    background: #9370db;
+    border: 2px outset #b39ddb;
 }
 
 ::-webkit-scrollbar-corner {
-    background: #3a5f0b;
+    background: #4a3c82;
 }
 
 /* CURSOR */
@@ -36,9 +36,9 @@ a:hover, button:hover {
 
 /* GLOBAL STYLES */
 body {
-    background-color: #2c4a03;
+    background-color: #36275a;
     font-family: 'VT323', monospace;
-    color: #d8f0b0;
+    color: #e8dcff;
     font-size: 18px;
     line-height: 1.5;
     background-image: url('/static/images/swamp_bg.svg');
@@ -63,26 +63,26 @@ body {
     max-width: 960px;
     margin: 0 auto;
     padding: 10px;
-    background-color: #3a5f0b;
+    background-color: #4a3c82;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-    border: 10px ridge #5c8a16;
+    border: 10px ridge #624dac;
     position: relative;
 }
 
 /* TOP NAVIGATION */
 .top-nav {
-    background-color: #5c8a16;
+    background-color: #624dac;
     color: #f5faed;
     padding: 5px 0;
     margin-bottom: 20px;
-    border: 3px outset #86b520;
+    border: 3px outset #9370db;
 }
 
 .moving-text {
     font-family: 'Press Start 2P', cursive;
     font-size: 12px;
     color: #f5faed;
-    text-shadow: 1px 1px 0 #2c4a03;
+    text-shadow: 1px 1px 0 #36275a;
 }
 
 /* HEADER STYLES */
@@ -141,13 +141,13 @@ h2 {
 .nav-table {
     width: 100%;
     border-collapse: collapse;
-    border: 3px outset #86b520;
-    background-color: #5c8a16;
+    border: 3px outset #9370db;
+    background-color: #624dac;
 }
 
 .nav-table td {
     text-align: center;
-    border: 2px inset #3a5f0b;
+    border: 2px inset #4a3c82;
     width: 20%;
 }
 
@@ -162,9 +162,9 @@ h2 {
 }
 
 .nav-table a:hover {
-    background-color: #86b520;
+    background-color: #9370db;
     text-decoration: underline;
-    color: #2c4a03;
+    color: #36275a;
 }
 
 /* UNDER CONSTRUCTION BANNER */
@@ -201,12 +201,12 @@ main {
     font-family: 'Press Start 2P', cursive;
     text-align: center;
     font-size: 22px;
-    color: #f0fad8;
-    text-shadow: 2px 2px 0 #2c4a03;
+    color: #f5faed;
+    text-shadow: 2px 2px 0 #36275a;
     margin-bottom: 10px;
     padding: 5px;
-    background-color: #5c8a16;
-    border: 3px outset #86b520;
+    background-color: #624dac;
+    border: 3px outset #9370db;
 }
 
 .divider {
@@ -221,9 +221,9 @@ main {
 }
 
 .content-box {
-    background-color: #5c8a16;
+    background-color: #624dac;
     padding: 20px;
-    border: 5px ridge #86b520;
+    border: 5px ridge #9370db;
     color: #f5faed;
 }
 
@@ -248,8 +248,8 @@ main {
 }
 
 .event-box {
-    background-color: #3a5f0b;
-    border: 3px inset #2c4a03;
+    background-color: #4a3c82;
+    border: 3px inset #36275a;
     padding: 15px;
 }
 
@@ -257,7 +257,7 @@ main {
     text-align: center;
     margin-bottom: 10px;
     font-size: 22px;
-    color: #f0fad8;
+    color: #f5faed;
 }
 
 .event-box ul {
@@ -277,9 +277,9 @@ main {
 }
 
 .tab-btn {
-    background-color: #3a5f0b;
+    background-color: #4a3c82;
     color: #f5faed;
-    border: 3px outset #86b520;
+    border: 3px outset #9370db;
     padding: 8px 15px;
     margin: 0 5px;
     font-family: 'VT323', monospace;
@@ -288,9 +288,9 @@ main {
 }
 
 .tab-btn.active {
-    background-color: #86b520;
-    border: 3px inset #5c8a16;
-    color: #2c4a03;
+    background-color: #9370db;
+    border: 3px inset #624dac;
+    color: #36275a;
     font-weight: bold;
 }
 
@@ -306,28 +306,28 @@ main {
     text-align: center;
     margin-bottom: 15px;
     font-size: 22px;
-    text-shadow: 1px 1px 0 #2c4a03;
+    text-shadow: 1px 1px 0 #36275a;
 }
 
 .schedule-table {
     width: 100%;
     border-collapse: collapse;
-    border: 3px ridge #86b520;
-    background-color: #3a5f0b;
+    border: 3px ridge #9370db;
+    background-color: #4a3c82;
 }
 
 .table-header {
-    background-color: #2c4a03;
+    background-color: #36275a;
 }
 
 .schedule-table th, .schedule-table td {
     padding: 8px;
     text-align: left;
-    border: 2px ridge #5c8a16;
+    border: 2px ridge #624dac;
 }
 
 .schedule-table tr:nth-child(even) {
-    background-color: #4e7210;
+    background-color: #5d4aa6;
 }
 
 /* LOCATION SECTION */
@@ -348,8 +348,8 @@ main {
 }
 
 .address-box {
-    background-color: #3a5f0b;
-    border: 3px inset #2c4a03;
+    background-color: #4a3c82;
+    border: 3px inset #36275a;
     padding: 15px;
     margin: 15px 0;
 }
@@ -366,7 +366,7 @@ main {
 
 .transport-options {
     margin-top: 20px;
-    border-top: 2px dashed #86b520;
+    border-top: 2px dashed #9370db;
     padding-top: 15px;
 }
 
@@ -381,8 +381,8 @@ main {
 .map-placeholder {
     width: 100%;
     height: 300px;
-    background-color: #3a5f0b;
-    border: 3px inset #2c4a03;
+    background-color: #4a3c82;
+    border: 3px inset #36275a;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -414,8 +414,8 @@ main {
 .image-placeholder {
     width: 100%;
     height: 150px;
-    background-color: #3a5f0b;
-    border: 3px inset #2c4a03;
+    background-color: #4a3c82;
+    border: 3px inset #36275a;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
@@ -429,7 +429,7 @@ main {
 }
 
 .image-placeholder span {
-    color: #a1cc39;
+    color: #b79cff;
     font-style: italic;
 }
 
@@ -441,8 +441,8 @@ main {
     text-align: center;
     margin-top: 30px;
     padding: 15px;
-    background-color: #3a5f0b;
-    border: 3px ridge #86b520;
+    background-color: #4a3c82;
+    border: 3px ridge #9370db;
 }
 
 .photo-upload h4 {
@@ -457,9 +457,9 @@ main {
 }
 
 .upload-btn {
-    background-color: #5c8a16;
+    background-color: #9370db;
     color: #f5faed;
-    border: 3px outset #86b520;
+    border: 3px outset #b79cff;
     padding: 8px 15px;
     font-family: 'VT323', monospace;
     font-size: 16px;
@@ -500,10 +500,10 @@ main {
     width: 100%;
     padding: 8px;
     background-color: #f5faed;
-    border: 3px inset #3a5f0b;
+    border: 3px inset #4a3c82;
     font-family: 'VT323', monospace;
     font-size: 16px;
-    color: #2c4a03;
+    color: #36275a;
 }
 
 .submit-row {
@@ -512,9 +512,9 @@ main {
 }
 
 .submit-btn {
-    background-color: #86b520;
-    color: #2c4a03;
-    border: 3px outset #a1cc39;
+    background-color: #9370db;
+    color: #36275a;
+    border: 3px outset #b79cff;
     padding: 8px 20px;
     font-family: 'VT323', monospace;
     font-size: 18px;
@@ -522,7 +522,7 @@ main {
 }
 
 .submit-btn:hover {
-    background-color: #a1cc39;
+    background-color: #b79cff;
 }
 
 .contact-info {
@@ -536,8 +536,8 @@ main {
 }
 
 .info-box {
-    background-color: #3a5f0b;
-    border: 3px inset #2c4a03;
+    background-color: #4a3c82;
+    border: 3px inset #36275a;
     padding: 15px;
 }
 
@@ -547,7 +547,7 @@ main {
 
 .social-links {
     margin-top: 20px;
-    border-top: 2px dashed #86b520;
+    border-top: 2px dashed #9370db;
     padding-top: 15px;
 }
 
@@ -564,7 +564,7 @@ main {
 }
 
 .social-links a, .guestbook-link {
-    color: #a1cc39;
+    color: #b79cff;
     text-decoration: none;
     font-weight: bold;
 }
@@ -576,18 +576,18 @@ main {
 
 .guestbook {
     margin-top: 20px;
-    border-top: 2px dashed #86b520;
+    border-top: 2px dashed #9370db;
     padding-top: 15px;
     text-align: center;
 }
 
 /* FOOTER */
 footer {
-    background-color: #2c4a03;
-    color: #d8f0b0;
+    background-color: #36275a;
+    color: #e5dcff;
     padding: 20px;
     text-align: center;
-    border-top: 5px ridge #5c8a16;
+    border-top: 5px ridge #624dac;
     margin-top: 30px;
 }
 
@@ -607,14 +607,14 @@ footer {
     display: inline-block;
     width: 30px;
     height: 40px;
-    background-color: #5c8a16;
+    background-color: #624dac;
     color: #f5faed;
     font-family: 'Press Start 2P', cursive;
     font-size: 18px;
     line-height: 40px;
     text-align: center;
     margin: 0 2px;
-    border: 2px inset #3a5f0b;
+    border: 2px inset #4a3c82;
 }
 
 .footer-links {
@@ -622,7 +622,7 @@ footer {
 }
 
 .footer-links a {
-    color: #a1cc39;
+    color: #b79cff;
     text-decoration: none;
     font-weight: bold;
     padding: 0 10px;
@@ -639,15 +639,15 @@ footer {
 
 .best-viewed {
     font-size: 12px;
-    color: #86b520;
+    color: #9370db;
     margin-top: 5px;
 }
 
 .webring {
     display: inline-block;
     padding: 8px 15px;
-    background-color: #5c8a16;
-    border: 3px outset #86b520;
+    background-color: #624dac;
+    border: 3px outset #9370db;
 }
 
 .webring-link {
