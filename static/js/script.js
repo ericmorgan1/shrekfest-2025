@@ -4,17 +4,17 @@
  */
 
 // Wait for the DOM to load
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     console.log("Welcome to Shrekfest 2023! It's all ogre now!");
-    
+
     // Initialize star cursor trail effect
     initializeStarCursor();
-    
+
     // Handle form submission
     setupContactForm();
-    
+
     // Show a retro welcome message
-    setTimeout(showWelcomeMessage, 1500);
+    // setTimeout(showWelcomeMessage, 1500);
 });
 
 /**
@@ -22,8 +22,8 @@ document.addEventListener('DOMContentLoaded', function() {
  */
 function initializeStarCursor() {
     const body = document.querySelector('body');
-    
-    body.addEventListener('mousemove', function(e) {
+
+    body.addEventListener('mousemove', function (e) {
         // Create a star element
         const star = document.createElement('div');
         star.className = 'star-cursor';
@@ -39,13 +39,13 @@ function initializeStarCursor() {
         star.style.userSelect = 'none';
         star.style.transition = 'transform 0.5s, opacity 0.5s';
         document.body.appendChild(star);
-        
+
         // Animate and remove the star
-        setTimeout(function() {
+        setTimeout(function () {
             star.style.transform = 'translateY(-20px) scale(0.5)';
             star.style.opacity = '0';
-            
-            setTimeout(function() {
+
+            setTimeout(function () {
                 star.remove();
             }, 500);
         }, 100);
@@ -66,26 +66,26 @@ function showSchedule(tabId) {
  */
 function setupContactForm() {
     const contactForm = document.querySelector('.contact-form form');
-    
+
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             // Get form values
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const subject = document.getElementById('subject').value;
             const message = document.getElementById('message').value;
-            
+
             // Simple validation
             if (!name || !email || !message) {
                 alert('Please fill out all required fields!');
                 return;
             }
-            
+
             // Show a success message in 90s style
             alert('Thanks for your message, ' + name + '!\n\nWe\'ll get back to you faster than Donkey can talk!');
-            
+
             // Reset the form
             contactForm.reset();
         });
@@ -105,7 +105,7 @@ function showWelcomeMessage() {
     overlay.style.height = '100%';
     overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
     overlay.style.zIndex = '10000';
-    
+
     const messageBox = document.createElement('div');
     messageBox.style.position = 'fixed';
     messageBox.style.top = '50%';
@@ -117,18 +117,18 @@ function showWelcomeMessage() {
     messageBox.style.padding = '20px';
     messageBox.style.textAlign = 'center';
     messageBox.style.zIndex = '10001';
-    
+
     const title = document.createElement('h3');
     title.textContent = 'WELCOME TO SHREKFEST 2023!';
     title.style.color = '#f5faed';
     title.style.marginBottom = '15px';
     title.style.textShadow = '1px 1px 0 #2c4a03';
-    
+
     const content = document.createElement('p');
     content.textContent = 'Get ready for the swampiest day of your life! Check out our schedule, location info, and more!';
     content.style.color = '#f5faed';
     content.style.marginBottom = '20px';
-    
+
     const button = document.createElement('button');
     button.textContent = 'ENTER THE SWAMP';
     button.style.backgroundColor = '#3a5f0b';
@@ -138,19 +138,19 @@ function showWelcomeMessage() {
     button.style.cursor = 'pointer';
     button.style.fontFamily = "'VT323', monospace";
     button.style.fontSize = '18px';
-    
+
     // Add click event to close
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function () {
         document.body.removeChild(overlay);
     });
-    
+
     // Assemble and add to page
     messageBox.appendChild(title);
     messageBox.appendChild(content);
     messageBox.appendChild(button);
     overlay.appendChild(messageBox);
     document.body.appendChild(overlay);
-    
+
     // Play a welcome sound (browser might block this due to autoplay policies)
     try {
         const audio = new Audio('data:audio/wav;base64,UklGRl9vT19XQVZFZm10IBAAAAABAAEAQB8AAEAfAAABAAgAZGF0YU9vT18=');
