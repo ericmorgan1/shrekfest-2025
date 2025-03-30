@@ -207,6 +207,10 @@ main {
     padding: 5px;
     background-color: #5c8a16;
     border: 3px outset #86b520;
+    line-height: 30px; /* Ensure consistent line height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .divider {
