@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+/* COLOR VARIABLES */
+:root {
+    --shrek-green-dark: #3a5f0b;
+    --shrek-green-medium: #5c8a16;
+    --shrek-green-light: #86b520;
+    --shrek-cream: #f5faed;
+    --shrek-purple: #7b2cbf; /* Royal purple for accent */
+    --shrek-purple-light: #9d4edd;
+    --shrek-purple-dark: #5a189a;
+}
+
 /* RETRO SCROLLBAR STYLING */
 ::-webkit-scrollbar {
     width: 15px;
@@ -12,17 +23,17 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #3a5f0b;
-    border: 2px solid #5c8a16;
+    background: var(--shrek-green-dark);
+    border: 2px solid var(--shrek-green-medium);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #86b520;
-    border: 2px outset #a1cc39;
+    background: var(--shrek-purple);
+    border: 2px outset var(--shrek-purple-light);
 }
 
 ::-webkit-scrollbar-corner {
-    background: #3a5f0b;
+    background: var(--shrek-green-dark);
 }
 
 /* CURSOR */
@@ -141,13 +152,13 @@ h2 {
 .nav-table {
     width: 100%;
     border-collapse: collapse;
-    border: 3px outset #86b520;
-    background-color: #5c8a16;
+    border: 3px outset var(--shrek-purple);
+    background-color: var(--shrek-green-medium);
 }
 
 .nav-table td {
     text-align: center;
-    border: 2px inset #3a5f0b;
+    border: 2px inset var(--shrek-green-dark);
     width: 20%;
 }
 
@@ -155,16 +166,16 @@ h2 {
     display: block;
     padding: 8px 12px;
     text-decoration: none;
-    color: #f5faed;
+    color: var(--shrek-cream);
     font-weight: bold;
     font-size: 20px;
     transition: background-color 0.3s;
 }
 
 .nav-table a:hover {
-    background-color: #86b520;
+    background-color: var(--shrek-purple-light);
     text-decoration: underline;
-    color: #2c4a03;
+    color: white;
 }
 
 /* UNDER CONSTRUCTION BANNER */
@@ -201,12 +212,12 @@ main {
     font-family: 'Press Start 2P', cursive;
     text-align: center;
     font-size: 22px;
-    color: #f0fad8;
-    text-shadow: 2px 2px 0 #2c4a03;
+    color: var(--shrek-cream);
+    text-shadow: 2px 2px 0 var(--shrek-purple-dark);
     margin-bottom: 10px;
     padding: 5px;
-    background-color: #5c8a16;
-    border: 3px outset #86b520;
+    background-color: var(--shrek-green-medium);
+    border: 3px outset var(--shrek-purple);
 }
 
 .divider {
@@ -221,10 +232,10 @@ main {
 }
 
 .content-box {
-    background-color: #5c8a16;
+    background-color: var(--shrek-green-medium);
     padding: 20px;
-    border: 5px ridge #86b520;
-    color: #f5faed;
+    border: 5px ridge var(--shrek-green-light);
+    color: var(--shrek-cream);
 }
 
 /* ABOUT SECTION */
@@ -277,9 +288,9 @@ main {
 }
 
 .tab-btn {
-    background-color: #3a5f0b;
-    color: #f5faed;
-    border: 3px outset #86b520;
+    background-color: var(--shrek-green-dark);
+    color: var(--shrek-cream);
+    border: 3px outset var(--shrek-purple);
     padding: 8px 15px;
     margin: 0 5px;
     font-family: 'VT323', monospace;
@@ -288,9 +299,9 @@ main {
 }
 
 .tab-btn.active {
-    background-color: #86b520;
-    border: 3px inset #5c8a16;
-    color: #2c4a03;
+    background-color: var(--shrek-purple);
+    border: 3px inset var(--shrek-purple-dark);
+    color: white;
     font-weight: bold;
 }
 
@@ -457,9 +468,9 @@ main {
 }
 
 .upload-btn {
-    background-color: #5c8a16;
-    color: #f5faed;
-    border: 3px outset #86b520;
+    background-color: var(--shrek-purple);
+    color: white;
+    border: 3px outset var(--shrek-purple-light);
     padding: 8px 15px;
     font-family: 'VT323', monospace;
     font-size: 16px;
@@ -512,9 +523,9 @@ main {
 }
 
 .submit-btn {
-    background-color: #86b520;
-    color: #2c4a03;
-    border: 3px outset #a1cc39;
+    background-color: var(--shrek-purple);
+    color: white;
+    border: 3px outset var(--shrek-purple-light);
     padding: 8px 20px;
     font-family: 'VT323', monospace;
     font-size: 18px;
@@ -522,7 +533,7 @@ main {
 }
 
 .submit-btn:hover {
-    background-color: #a1cc39;
+    background-color: var(--shrek-purple-light);
 }
 
 .contact-info {
@@ -547,7 +558,7 @@ main {
 
 .social-links {
     margin-top: 20px;
-    border-top: 2px dashed #86b520;
+    border-top: 2px dashed var(--shrek-purple-light);
     padding-top: 15px;
 }
 
@@ -564,30 +575,30 @@ main {
 }
 
 .social-links a, .guestbook-link {
-    color: #a1cc39;
+    color: var(--shrek-purple-light);
     text-decoration: none;
     font-weight: bold;
 }
 
 .social-links a:hover, .guestbook-link:hover {
     text-decoration: underline;
-    color: #f0fad8;
+    color: var(--shrek-cream);
 }
 
 .guestbook {
     margin-top: 20px;
-    border-top: 2px dashed #86b520;
+    border-top: 2px dashed var(--shrek-purple-light);
     padding-top: 15px;
     text-align: center;
 }
 
 /* FOOTER */
 footer {
-    background-color: #2c4a03;
-    color: #d8f0b0;
+    background-color: var(--shrek-green-dark);
+    color: var(--shrek-cream);
     padding: 20px;
     text-align: center;
-    border-top: 5px ridge #5c8a16;
+    border-top: 5px ridge var(--shrek-purple);
     margin-top: 30px;
 }
 
@@ -613,14 +624,14 @@ footer {
     display: inline-block;
     width: 30px;
     height: 40px;
-    background-color: #5c8a16;
-    color: #f5faed;
+    background-color: var(--shrek-purple);
+    color: white;
     font-family: 'Press Start 2P', cursive;
     font-size: 18px;
     line-height: 40px;
     text-align: center;
     margin: 0 2px;
-    border: 2px inset #3a5f0b;
+    border: 2px inset var(--shrek-purple-dark);
 }
 
 .footer-links {
@@ -628,7 +639,7 @@ footer {
 }
 
 .footer-links a {
-    color: #a1cc39;
+    color: var(--shrek-purple-light);
     text-decoration: none;
     font-weight: bold;
     padding: 0 10px;
@@ -636,7 +647,7 @@ footer {
 
 .footer-links a:hover {
     text-decoration: underline;
-    color: #f0fad8;
+    color: var(--shrek-cream);
 }
 
 .copyright {
@@ -652,12 +663,12 @@ footer {
 .webring {
     display: inline-block;
     padding: 8px 15px;
-    background-color: #5c8a16;
-    border: 3px outset #86b520;
+    background-color: var(--shrek-purple);
+    border: 3px outset var(--shrek-purple-light);
 }
 
 .webring-link {
-    color: #f5faed;
+    color: white;
     text-decoration: none;
     font-weight: bold;
 }
