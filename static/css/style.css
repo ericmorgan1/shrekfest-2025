@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+/* ACCENT COLOR VARIABLES */
+:root {
+    --purple-accent: #8d43a9;
+    --purple-accent-light: #a255be;
+    --purple-accent-dark: #6b2f84;
+}
+
 /* RETRO SCROLLBAR STYLING */
 ::-webkit-scrollbar {
     width: 15px;
@@ -18,7 +25,7 @@
 
 ::-webkit-scrollbar-thumb {
     background: #86b520;
-    border: 2px outset #a1cc39;
+    border: 2px outset var(--purple-accent);
 }
 
 ::-webkit-scrollbar-corner {
@@ -206,7 +213,7 @@ main {
     margin-bottom: 10px;
     padding: 5px;
     background-color: #5c8a16;
-    border: 3px outset #86b520;
+    border: 3px outset var(--purple-accent);
 }
 
 .divider {
@@ -239,12 +246,12 @@ main {
 
 .first-letter {
     font-size: 36px;
-    color: #f0fad8;
+    color: var(--purple-accent-light);
     font-weight: bold;
     float: left;
     line-height: 0.8;
     margin-right: 5px;
-    text-shadow: 2px 2px 0 #2c4a03;
+    text-shadow: 2px 2px 0 var(--purple-accent-dark);
 }
 
 .event-box {
@@ -288,9 +295,9 @@ main {
 }
 
 .tab-btn.active {
-    background-color: #86b520;
-    border: 3px inset #5c8a16;
-    color: #2c4a03;
+    background-color: var(--purple-accent);
+    border: 3px inset var(--purple-accent-dark);
+    color: #f5faed;
     font-weight: bold;
 }
 
@@ -317,7 +324,7 @@ main {
 }
 
 .table-header {
-    background-color: #2c4a03;
+    background-color: var(--purple-accent-dark);
 }
 
 .schedule-table th, .schedule-table td {
@@ -512,9 +519,9 @@ main {
 }
 
 .submit-btn {
-    background-color: #86b520;
-    color: #2c4a03;
-    border: 3px outset #a1cc39;
+    background-color: var(--purple-accent);
+    color: #f5faed;
+    border: 3px outset var(--purple-accent-light);
     padding: 8px 20px;
     font-family: 'VT323', monospace;
     font-size: 18px;
@@ -522,7 +529,7 @@ main {
 }
 
 .submit-btn:hover {
-    background-color: #a1cc39;
+    background-color: var(--purple-accent-light);
 }
 
 .contact-info {
@@ -564,7 +571,7 @@ main {
 }
 
 .social-links a, .guestbook-link {
-    color: #a1cc39;
+    color: var(--purple-accent-light);
     text-decoration: none;
     font-weight: bold;
 }
@@ -622,7 +629,7 @@ footer {
 }
 
 .footer-links a {
-    color: #a1cc39;
+    color: var(--purple-accent-light);
     text-decoration: none;
     font-weight: bold;
     padding: 0 10px;
@@ -646,8 +653,8 @@ footer {
 .webring {
     display: inline-block;
     padding: 8px 15px;
-    background-color: #5c8a16;
-    border: 3px outset #86b520;
+    background-color: var(--purple-accent);
+    border: 3px outset var(--purple-accent-light);
 }
 
 .webring-link {
