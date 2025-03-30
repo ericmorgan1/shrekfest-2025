@@ -12,17 +12,17 @@
 }
 
 ::-webkit-scrollbar-track {
-    background: #4a3c82;
-    border: 2px solid #624dac;
+    background: #3a5f0b;
+    border: 2px solid #5c8a16;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #9370db;
-    border: 2px outset #b39ddb;
+    background: #86b520;
+    border: 2px outset #a1cc39;
 }
 
 ::-webkit-scrollbar-corner {
-    background: #4a3c82;
+    background: #3a5f0b;
 }
 
 /* CURSOR */
@@ -36,9 +36,9 @@ a:hover, button:hover {
 
 /* GLOBAL STYLES */
 body {
-    background-color: #36275a;
+    background-color: #2c4a03;
     font-family: 'VT323', monospace;
-    color: #e8dcff;
+    color: #d8f0b0;
     font-size: 18px;
     line-height: 1.5;
     background-image: url('/static/images/swamp_bg.svg');
@@ -63,26 +63,26 @@ body {
     max-width: 960px;
     margin: 0 auto;
     padding: 10px;
-    background-color: #4a3c82;
+    background-color: #3a5f0b;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-    border: 10px ridge #624dac;
+    border: 10px ridge #5c8a16;
     position: relative;
 }
 
 /* TOP NAVIGATION */
 .top-nav {
-    background-color: #624dac;
+    background-color: #5c8a16;
     color: #f5faed;
     padding: 5px 0;
     margin-bottom: 20px;
-    border: 3px outset #9370db;
+    border: 3px outset #86b520;
 }
 
 .moving-text {
     font-family: 'Press Start 2P', cursive;
     font-size: 12px;
     color: #f5faed;
-    text-shadow: 1px 1px 0 #36275a;
+    text-shadow: 1px 1px 0 #2c4a03;
 }
 
 /* HEADER STYLES */
@@ -141,13 +141,13 @@ h2 {
 .nav-table {
     width: 100%;
     border-collapse: collapse;
-    border: 3px outset #9370db;
-    background-color: #624dac;
+    border: 3px outset #86b520;
+    background-color: #5c8a16;
 }
 
 .nav-table td {
     text-align: center;
-    border: 2px inset #4a3c82;
+    border: 2px inset #3a5f0b;
     width: 20%;
 }
 
@@ -162,9 +162,9 @@ h2 {
 }
 
 .nav-table a:hover {
-    background-color: #9370db;
+    background-color: #86b520;
     text-decoration: underline;
-    color: #36275a;
+    color: #2c4a03;
 }
 
 /* UNDER CONSTRUCTION BANNER */
@@ -201,12 +201,12 @@ main {
     font-family: 'Press Start 2P', cursive;
     text-align: center;
     font-size: 22px;
-    color: #f5faed;
-    text-shadow: 2px 2px 0 #36275a;
+    color: #f0fad8;
+    text-shadow: 2px 2px 0 #2c4a03;
     margin-bottom: 10px;
     padding: 5px;
-    background-color: #624dac;
-    border: 3px outset #9370db;
+    background-color: #5c8a16;
+    border: 3px outset #86b520;
 }
 
 .divider {
@@ -277,9 +277,9 @@ main {
 }
 
 .tab-btn {
-    background-color: #4a3c82;
+    background-color: #3a5f0b;
     color: #f5faed;
-    border: 3px outset #9370db;
+    border: 3px outset #86b520;
     padding: 8px 15px;
     margin: 0 5px;
     font-family: 'VT323', monospace;
@@ -288,9 +288,9 @@ main {
 }
 
 .tab-btn.active {
-    background-color: #9370db;
-    border: 3px inset #624dac;
-    color: #36275a;
+    background-color: #86b520;
+    border: 3px inset #5c8a16;
+    color: #2c4a03;
     font-weight: bold;
 }
 
@@ -306,28 +306,28 @@ main {
     text-align: center;
     margin-bottom: 15px;
     font-size: 22px;
-    text-shadow: 1px 1px 0 #36275a;
+    text-shadow: 1px 1px 0 #2c4a03;
 }
 
 .schedule-table {
     width: 100%;
     border-collapse: collapse;
-    border: 3px ridge #9370db;
-    background-color: #4a3c82;
+    border: 3px ridge #86b520;
+    background-color: #3a5f0b;
 }
 
 .table-header {
-    background-color: #36275a;
+    background-color: #2c4a03;
 }
 
 .schedule-table th, .schedule-table td {
     padding: 8px;
     text-align: left;
-    border: 2px ridge #624dac;
+    border: 2px ridge #5c8a16;
 }
 
 .schedule-table tr:nth-child(even) {
-    background-color: #5d4aa6;
+    background-color: #4e7210;
 }
 
 /* LOCATION SECTION */
@@ -457,9 +457,9 @@ main {
 }
 
 .upload-btn {
-    background-color: #9370db;
+    background-color: #5c8a16;
     color: #f5faed;
-    border: 3px outset #b79cff;
+    border: 3px outset #86b520;
     padding: 8px 15px;
     font-family: 'VT323', monospace;
     font-size: 16px;
@@ -500,10 +500,10 @@ main {
     width: 100%;
     padding: 8px;
     background-color: #f5faed;
-    border: 3px inset #4a3c82;
+    border: 3px inset #3a5f0b;
     font-family: 'VT323', monospace;
     font-size: 16px;
-    color: #36275a;
+    color: #2c4a03;
 }
 
 .submit-row {
@@ -512,9 +512,9 @@ main {
 }
 
 .submit-btn {
-    background-color: #9370db;
-    color: #36275a;
-    border: 3px outset #b79cff;
+    background-color: #86b520;
+    color: #2c4a03;
+    border: 3px outset #a1cc39;
     padding: 8px 20px;
     font-family: 'VT323', monospace;
     font-size: 18px;
@@ -522,7 +522,7 @@ main {
 }
 
 .submit-btn:hover {
-    background-color: #b79cff;
+    background-color: #a1cc39;
 }
 
 .contact-info {
@@ -564,7 +564,7 @@ main {
 }
 
 .social-links a, .guestbook-link {
-    color: #9370db;
+    color: #a1cc39;
     text-decoration: none;
     font-weight: bold;
 }
@@ -583,11 +583,11 @@ main {
 
 /* FOOTER */
 footer {
-    background-color: #36275a;
-    color: #e5dcff;
+    background-color: #2c4a03;
+    color: #d8f0b0;
     padding: 20px;
     text-align: center;
-    border-top: 5px ridge #624dac;
+    border-top: 5px ridge #5c8a16;
     margin-top: 30px;
 }
 
@@ -607,14 +607,14 @@ footer {
     display: inline-block;
     width: 30px;
     height: 40px;
-    background-color: #624dac;
+    background-color: #5c8a16;
     color: #f5faed;
     font-family: 'Press Start 2P', cursive;
     font-size: 18px;
     line-height: 40px;
     text-align: center;
     margin: 0 2px;
-    border: 2px inset #4a3c82;
+    border: 2px inset #3a5f0b;
 }
 
 .footer-links {
@@ -622,7 +622,7 @@ footer {
 }
 
 .footer-links a {
-    color: #b79cff;
+    color: #a1cc39;
     text-decoration: none;
     font-weight: bold;
     padding: 0 10px;
@@ -639,15 +639,15 @@ footer {
 
 .best-viewed {
     font-size: 12px;
-    color: #9370db;
+    color: #86b520;
     margin-top: 5px;
 }
 
 .webring {
     display: inline-block;
     padding: 8px 15px;
-    background-color: #624dac;
-    border: 3px outset #9370db;
+    background-color: #5c8a16;
+    border: 3px outset #86b520;
 }
 
 .webring-link {
