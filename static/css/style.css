@@ -221,9 +221,9 @@ main {
 }
 
 .content-box {
-    background-color: #624dac;
+    background-color: #5c8a16;
     padding: 20px;
-    border: 5px ridge #9370db;
+    border: 5px ridge #86b520;
     color: #f5faed;
 }
 
@@ -248,8 +248,8 @@ main {
 }
 
 .event-box {
-    background-color: #4a3c82;
-    border: 3px inset #36275a;
+    background-color: #3a5f0b;
+    border: 3px inset #2c4a03;
     padding: 15px;
 }
 
@@ -257,7 +257,7 @@ main {
     text-align: center;
     margin-bottom: 10px;
     font-size: 22px;
-    color: #f5faed;
+    color: #f0fad8;
 }
 
 .event-box ul {
@@ -348,8 +348,8 @@ main {
 }
 
 .address-box {
-    background-color: #4a3c82;
-    border: 3px inset #36275a;
+    background-color: #3a5f0b;
+    border: 3px inset #2c4a03;
     padding: 15px;
     margin: 15px 0;
 }
@@ -366,7 +366,7 @@ main {
 
 .transport-options {
     margin-top: 20px;
-    border-top: 2px dashed #9370db;
+    border-top: 2px dashed #86b520;
     padding-top: 15px;
 }
 
@@ -381,8 +381,8 @@ main {
 .map-placeholder {
     width: 100%;
     height: 300px;
-    background-color: #4a3c82;
-    border: 3px inset #36275a;
+    background-color: #3a5f0b;
+    border: 3px inset #2c4a03;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -414,8 +414,8 @@ main {
 .image-placeholder {
     width: 100%;
     height: 150px;
-    background-color: #4a3c82;
-    border: 3px inset #36275a;
+    background-color: #3a5f0b;
+    border: 3px inset #2c4a03;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
@@ -429,7 +429,7 @@ main {
 }
 
 .image-placeholder span {
-    color: #b79cff;
+    color: #a1cc39;
     font-style: italic;
 }
 
@@ -441,8 +441,8 @@ main {
     text-align: center;
     margin-top: 30px;
     padding: 15px;
-    background-color: #4a3c82;
-    border: 3px ridge #9370db;
+    background-color: #3a5f0b;
+    border: 3px ridge #86b520;
 }
 
 .photo-upload h4 {
@@ -536,8 +536,8 @@ main {
 }
 
 .info-box {
-    background-color: #4a3c82;
-    border: 3px inset #36275a;
+    background-color: #3a5f0b;
+    border: 3px inset #2c4a03;
     padding: 15px;
 }
 
@@ -547,7 +547,7 @@ main {
 
 .social-links {
     margin-top: 20px;
-    border-top: 2px dashed #9370db;
+    border-top: 2px dashed #86b520;
     padding-top: 15px;
 }
 
@@ -564,7 +564,7 @@ main {
 }
 
 .social-links a, .guestbook-link {
-    color: #b79cff;
+    color: #9370db;
     text-decoration: none;
     font-weight: bold;
 }
@@ -576,7 +576,7 @@ main {
 
 .guestbook {
     margin-top: 20px;
-    border-top: 2px dashed #9370db;
+    border-top: 2px dashed #86b520;
     padding-top: 15px;
     text-align: center;
 }
