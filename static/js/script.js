@@ -5,7 +5,7 @@
 
 // Wait for the DOM to load
 document.addEventListener('DOMContentLoaded', function () {
-    console.log("Welcome to Shrekfest 2023! It's all ogre now!");
+    console.log("Welcome to Shrekfest 2023!");
 
     // Initialize star cursor trail effect
     initializeStarCursor();
