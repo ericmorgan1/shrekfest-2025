@@ -17,6 +17,44 @@ document.addEventListener('DOMContentLoaded', function () {
     // setTimeout(showWelcomeMessage, 1500);
 });
 
+// Update the countdown to the event...
+document.addEventListener("DOMContentLoaded", function () {
+    const countdownElement = document.getElementById("countdown");
+    const eventDate = new Date("August 30, 2025 10:00:00").getTime();
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const timeLeft = eventDate - now;
+
+        if (timeLeft > 0) {
+            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+            const formattedTime = [
+                String(days).padStart(2, "0"),
+
+                // TODO: These will add hours/minutes/seconds, but
+                // you'd have to label them
+                // String(hours).padStart(2, "0"),
+                // String(minutes).padStart(2, "0"),
+                // String(seconds).padStart(2, "0"),
+            ].join("");
+
+            countdownElement.innerHTML = formattedTime
+                .split("")
+                .map((digit) => `<span class="digit">${digit}</span>`)
+                .join("");
+        } else {
+            countdownElement.innerHTML = '<span class="digit">E</span><span class="digit">N</span><span class="digit">D</span>';
+        }
+    }
+
+    // setInterval(updateCountdown, 1000);  // This will update every second
+    updateCountdown();
+});
+
 /**
  * Creates a star/sparkle cursor trail effect
  */
